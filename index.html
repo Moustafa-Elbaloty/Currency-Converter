@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scroll progress</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<style></style>
+
+<body>
+    <div class="container">
+
+        <div class="currency-box">
+            <h3>Currency Converter</h3>
+            <!-- Input field for the amount to convert -->
+            <div class="amount">
+                <label for="amount">enter amount</label><br>
+                <input type="text" id="amount" value="100" />
+            </div>
+            <!-- Currency selection and swap button -->
+            <div class="operations">
+                <!-- "From" currency selection -->
+                <div class="currency">
+                    <label for="from">From</label>
+                    <select id="from">
+                        <option value="EGP">🇪🇬 EGP - Egypt</option>
+                        <option value="SAR">🇸🇦 SAR - Saudi Arabia</option>
+                        <option value="USD">🇺🇸 USD - United States</option>
+                        <option value="ILS">🇵🇸 ILS - Palestine</option>
+                        <option value="KWD">🇰🇼 KWD - Kuwait</option>
+                        <option value="QAR">🇶🇦 QAR - Qatar</option>
+                        <option value="AED">🇦🇪 AED - United Arab Emirates</option>
+                    </select>
+                </div>
+                <!-- Swap button to switch  -->
+                <div class="swap"><svg width="16" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.13 11.66H.22a.22.22 0 0 0-.22.22v1.62a.22.22 0 0 0 .22.22h16.45l-3.92 4.94a.22.22 0 0 0 .17.35h1.97c.13 0 .25-.06.33-.16l4.59-5.78a.9.9 0 0 0-.7-1.43zM19.78 5.29H3.34L7.26.35A.22.22 0 0 0 7.09 0H5.12a.22.22 0 0 0-.34.16L.19 5.94a.9.9 0 0 0 .68 1.4H19.78a.22.22 0 0 0 .22-.22V5.51a.22.22 0 0 0-.22-.22z"
+                            fill="#fff"></path>
+                    </svg>
+                </div>
+                <!-- "To" currency selection -->
+                <div class="currency">
+                    <label for="to">to</label>
+                    <select id="to">
+                        <option value="SAR">🇸🇦 SAR - Saudi Arabia</option>
+                        <option value="EGP">🇪🇬 EGP - Egypt</option>
+                        <option value="USD">🇺🇸 USD - United States</option>
+                        <option value="ILS">🇵🇸 ILS - Palestine</option>
+                        <option value="KWD">🇰🇼 KWD - Kuwait</option>
+                        <option value="QAR">🇶🇦 QAR - Qatar</option>
+                        <option value="AED">🇦🇪 AED - United Arab Emirates</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Button to get exchange  -->
+            <button class="btn-change">Get Exchange Rate </button>
+            <!-- Display the converted value -->
+            <div class="value-exchange"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

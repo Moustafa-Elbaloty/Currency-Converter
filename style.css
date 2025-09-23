@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #030728;
+    overflow: hidden
+}
+
+.container {
+    width: 100%;
+    background: url(/bg.png) #030728 center no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    transition: 1s;
+    opacity: 0;
+    transform: translateY(20px)
+}
+
+/* Load animation class */
+.load {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+/* Currency converter box  */
+.container .currency-box {
+    margin: 0 auto;
+    padding: 40px 25px;
+    border-radius: 6px;
+    max-width: 400px;
+    backdrop-filter: blur(30px);
+    /* Glass effect */
+    background: #02072880;
+    border: 1px solid rgba(255, 255, 255, .3);
+    box-shadow: 0 8px 32px #00000080;
+    color: white
+}
+
+.currency-box h3 {
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.currency-box label {
+    font-size: 15px;
+}
+
+/* Amount input field  */
+.currency-box input#amount {
+    width: 100%;
+    margin: 8px 0 25px;
+    height: 42px;
+    padding: 15px;
+    border: 1px solid rgb(255 255 255 / 50%);
+    background: rgb(239 240 244 / 16%);
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+}
+
+.currency-box .operations {
+    display: flex;
+    align-items: end;
+    padding: 15px 0;
+    gap: 10px;
+}
+
+.swap {
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    background: rgb(239 240 244 / 16%);
+    border: 1px solid rgb(255 255 255 / 50%);
+}
+
+
+
+.currency-box .operations select {
+    padding: 7px;
+    font-size: 15px;
+    background: rgb(239 240 244 / 16%);
+    display: block;
+    margin-top: 10px;
+    color: white;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.currency-box .operations select option {
+    color: black;
+}
+
+.currency-box .btn-change {
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 25px 0
+}
+
+.currency-box .value-exchange {
+    padding: 19px;
+    background: rgb(239 240 244 / 16%);
+    border-radius: 6px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+}
